@@ -1,8 +1,12 @@
 body {
-  background: #e99cd2;
+  background: #e0c5d9;
   color: white;
 }
 
 h1 {
+  text-align: center;
+}
+
+footer {
   text-align: center;
 }
