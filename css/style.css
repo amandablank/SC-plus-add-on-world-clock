@@ -119,3 +119,28 @@ footer :hover {
   text-decoration: none;
   color: rgb(51, 255, 0);
 }
+
+@media (max-width: 600px) {
+  .time {
+    font-size: 26px;
+  }
+  .time small {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 18px;
+    text-align: left;
+  }
+  .date {
+    font-size: 12px;
+    text-align: left;
+  }
+  .back-btn a {
+    font-size: 20px;
+    text-align: center;
+  }
+  .back-btn a:hover {
+    font-size: 20px;
+    text-align: center;
+  }
+}
