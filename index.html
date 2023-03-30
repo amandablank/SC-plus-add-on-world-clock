@@ -13,33 +13,42 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="city">
         <option value="">--Select a city--</option>
-        <option value="">Buenos Aires</option>
-        <option value="">Ontario</option>
-        <option value="">Berlin</option>
+        <option value="America/Recife">Recife 🇧🇷</option>
+        <option value="America/New_York">New York 🇺🇸</option>
+        <option value="Europe/Berlin">Berlin 🇩🇪</option>
       </select>
 
-      <div class="city" id="sao-paulo">
-        <div>
-          <h2>São Paulo, Brazil</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="ushuaia">
+          <div>
+            <h2>Ushuaia <small>🇦🇷 </small></h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="athens">
-        <div>
-          <h2>Athens, Greece</h2>
-          <div class="date"></div>
+        <div class="city" id="london">
+          <div>
+            <h2>London <small>🇬🇧</small></h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="tokyo">
-        <div>
-          <h2>Tokyo, Japan</h2>
-          <div class="date"></div>
+        <div class="city" id="athens">
+          <div>
+            <h2>Athens <small>🇬🇷</small></h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo <small>🇯🇵</small></h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
     <footer>
