@@ -54,7 +54,9 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
-
+  if (cityTimeZone === "local-timezone") {
+    cityTimeZone = moment.tz.guess();
+  }
   if (cityTimeZone) {
     let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
@@ -69,9 +71,11 @@ function updateCity(event) {
         <small>${cityTime.format("A")}</small>
       </div>
     </div>
-    <a href="/" class="back-btn">
-      Back 
-    </a>;
+    <div class="back-btn">
+    <a href="/">
+      --->> Back to homepage <<---
+    </a>
+    </div>
     `;
 
     setTimeout(() => updateCity(event), 1000);
